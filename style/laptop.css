@@ -268,14 +268,12 @@ li::marker {
   margin-bottom: 20px;
 }
 
-a[href="https://github.com/RishmalRohinkumar/RGB-Color-Guessing-Game"]
-{
+.projectTitle a {
   color: var(--midnight-blue);
   text-decoration: none;
 }
 
-a[href="https://github.com/RishmalRohinkumar/RGB-Color-Guessing-Game"]:hover
-{
+.projectTitle a:hover {
   text-decoration: underline;
 }
 
