@@ -1,0 +1,205 @@
+:root {
+  --midnight-blue: #1b2145;
+  --blueberry: #4d648d;
+  --periwinkle: #d0e1f9;
+}
+
+#hamburgerMenu,
+#hamburger {
+  display: none;
+}
+
+body {
+  font-family: "Verdana", "Arial", sans-serif;
+}
+
+header {
+  height: 5em;
+  font-size: larger;
+  display: flex;
+  /* border: 1px solid white; */
+}
+
+header > a {
+  height: 5em;
+}
+
+nav {
+  height: 2em;
+  width: 50%;
+  position: absolute;
+  right: 0px;
+  padding: 1.5em;
+  /* border: 1px solid white; */
+}
+
+nav > a {
+  padding: 5px;
+  text-decoration: none;
+}
+
+#resumeButton {
+  border: 2px solid black;
+  font-weight: 200;
+  border-radius: 5px;
+}
+
+#navbarLogo {
+  height: 5em;
+  display: none;
+}
+
+.listLabel {
+  font-weight: bold;
+}
+
+strong {
+  font-size: 14pt;
+}
+
+aside {
+  color: grey;
+}
+
+#gridIntro {
+  /* border: 1px solid white; */
+  width: 70%;
+  margin-top: 5%;
+  margin-bottom: 18em;
+  position: relative;
+  left: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#box2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 32pt;
+}
+
+h2 {
+  font-size: 24pt;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+.flexColCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexRowCenter {
+  display: flex;
+  justify-content: center;
+}
+
+li::marker {
+  font-weight: bold;
+}
+
+#education {
+  margin-bottom: 10em;
+}
+
+#gridProjects {
+  /* border: 1px solid white; */
+  width: 60%;
+  position: relative;
+  left: 20%;
+  margin-bottom: 10em;
+}
+
+.gridProjectsCell {
+  /* border: 1px solid white; */
+  background-color: grey;
+  border-radius: 20%;
+  place-self: center;
+  height: 20em;
+  margin-bottom: 1em;
+}
+
+.projectTitle {
+  margin: 30px;
+  text-align: center;
+  width: 60%;
+}
+
+.projectDate {
+  /* border: 1px solid white; */
+  font-size: 10pt;
+  font-weight: bold;
+  margin-top: 28px;
+  margin-right: 40px;
+  padding-bottom: 0;
+  text-align: end;
+}
+
+.projectText {
+  /* border: 1px solid white; */
+  margin-top: 0;
+  text-align: center;
+}
+
+.flexProjectLangs {
+  display: flex;
+  justify-content: center;
+}
+
+.projectLangs {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a[href="https://github.com/RishmalRohinkumar/RGB-Color-Guessing-Game"]
+{
+  text-decoration: none;
+}
+
+.experienceContainer {
+  /* border: 1px solid white; */
+  width: 90%;
+  margin-bottom: 3vh;
+}
+
+.experienceHeader {
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.link {
+  margin: 20px;
+}
+
+#contact {
+  width: 75%;
+  position: relative;
+  left: 12.5%;
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+#footer {
+  padding: 2em;
+  font-size: 10pt;
+}
+
+cite {
+  display: none;
+}
+
+#blueberry {
+  color: grey;
+}

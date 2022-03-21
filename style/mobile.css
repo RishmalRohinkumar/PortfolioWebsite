@@ -1,0 +1,311 @@
+:root {
+  --midnight-blue: #1b2145;
+  --blueberry: #4d648d;
+  --periwinkle: #d0e1f9;
+}
+
+nav {
+  display: none;
+}
+
+body {
+  font-family: "Verdana", "Arial", sans-serif;
+  background: var(--midnight-blue);
+  color: var(--periwinkle);
+  overflow: scroll;
+  scrollbar-width: 0;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+header > a {
+  height: 5em;
+}
+
+nav {
+  height: 2em;
+  width: 50%;
+  position: absolute;
+  right: 0px;
+  padding: 1.5em;
+  /* border: 1px solid white; */
+}
+
+a {
+  color: var(--periwinkle);
+}
+
+nav > a {
+  padding: 5px;
+  text-decoration: none;
+}
+
+nav > a:hover {
+  color: var(--blueberry);
+}
+
+#resumeButton {
+  color: var(--blueberry);
+  border: 2px solid var(--blueberry);
+  font-weight: 200;
+  border-radius: 5px;
+}
+
+#navbarLogo {
+  height: 5em;
+}
+
+.listLabel {
+  color: var(--blueberry);
+  font-weight: bold;
+}
+
+.listLabel2 {
+  color: var(--midnight-blue);
+  font-weight: bold;
+}
+
+strong {
+  color: var(--blueberry);
+  font-size: 14pt;
+}
+
+.strongAlt {
+  color: var(--midnight-blue);
+}
+
+aside {
+  color: var(--blueberry);
+}
+
+#gridIntro {
+  /* border: 1px solid white; */
+  width: 70%;
+  margin-top: 5em;
+  position: relative;
+  left: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#box1 {
+  color: var(--periwinkle);
+}
+
+#box2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 32pt;
+  color: var(--blueberry);
+}
+
+h2 {
+  font-size: 24pt;
+}
+
+h3 {
+  color: var(--blueberry);
+  margin-bottom: 0;
+}
+
+.flexColCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexRowCenter {
+  display: flex;
+  justify-content: center;
+}
+
+li::marker {
+  color: var(--blueberry);
+  font-weight: bold;
+}
+
+#education {
+  margin-bottom: 10em;
+}
+
+#gridProjects {
+  /* border: 1px solid white; */
+  width: 80%;
+  position: relative;
+  left: 10%;
+  margin-bottom: 3em;
+}
+
+.gridProjectsCell {
+  /* border: 1px solid white; */
+  background-color: var(--blueberry);
+  border-radius: 20%;
+  place-self: center;
+  height: 20em;
+  margin-bottom: 1em;
+}
+
+.projectTitle {
+  /* border: 1px solid white; */
+  color: var(--midnight-blue);
+  margin: 30px;
+  text-align: center;
+  width: 60%;
+}
+
+.projectDate {
+  /* border: 1px solid white; */
+  font-size: 10pt;
+  font-weight: bold;
+  margin-top: 28px;
+  margin-right: 40px;
+  padding-bottom: 0;
+  text-align: end;
+}
+
+.projectText {
+  /* border: 1px solid white; */
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.flexProjectLangs {
+  display: flex;
+  justify-content: center;
+}
+
+.projectLangs {
+  /* border: 1px solid white; */
+  color: var(--midnight-blue);
+  font-size: 12pt;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a[href="https://github.com/RishmalRohinkumar/RGB-Color-Guessing-Game"]
+{
+  color: var(--midnight-blue);
+  text-decoration: none;
+}
+
+.experienceContainer {
+  /* border: 1px solid white; */
+  width: 90%;
+  margin-bottom: 3vh;
+}
+
+.experienceContainer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experienceContainer img {
+  margin: 2em;
+}
+
+.experienceContainer img[src="assets/Pictures/Experience/UCSD_CKI.jpg"] {
+  margin-top: 3.5em;
+}
+
+.experienceHeader {
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.link {
+  margin: 20px;
+}
+
+#contact {
+  width: 75%;
+  position: relative;
+  left: 12.5%;
+  text-align: center;
+  margin-top: 3em;
+}
+
+#footer {
+  padding: 2em;
+  font-size: 10pt;
+}
+
+cite {
+  display: none;
+}
+
+#hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  color: var(--periwinkle);
+  border: 1px solid var(--periwinkle);
+  background: var(--midnight-blue);
+}
+
+#closeIcon {
+  display: none;
+}
+
+#menuIcon {
+  display: block;
+}
+
+.menuItem {
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+#hamburgerMenu {
+  position: fixed;
+  /* transform: translateY(-100%); */
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: var(--blueberry);
+  list-style: none;
+  padding-top: 6rem;
+  margin: 0;
+}
+
+.menuItem > a {
+  text-decoration: none;
+}
+
+#menuResume > a {
+  color: var(--midnight-blue);
+  border: 3px solid var(--midnight-blue);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.hideMenu {
+  transform: translateY(100%);
+}
+
+#blueberry {
+  color: var(--blueberry);
+}

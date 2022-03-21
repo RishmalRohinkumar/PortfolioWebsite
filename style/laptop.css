@@ -1,0 +1,338 @@
+:root {
+  --midnight-blue: #1b2145;
+  --blueberry: #4d648d;
+  --periwinkle: #d0e1f9;
+}
+
+#hamburgerMenu,
+#hamburger {
+  display: none;
+}
+
+body {
+  font-family: "Verdana", "Arial", sans-serif;
+  background: var(--midnight-blue);
+  color: var(--periwinkle);
+  overflow: scroll;
+  scrollbar-width: 0;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+header {
+  height: 5em;
+  font-size: larger;
+  display: flex;
+  /* margin-bottom: 2em; */
+  /* border: 1px solid white; */
+}
+
+header > a {
+  height: 5em;
+}
+
+nav {
+  height: 2em;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  right: 0px;
+  padding: 1.5em;
+  /* border: 1px solid white; */
+}
+
+a {
+  color: var(--periwinkle);
+}
+
+nav > a {
+  padding: 5px;
+  text-decoration: none;
+}
+
+nav > a:hover {
+  color: var(--blueberry);
+}
+
+#resumeButton {
+  color: var(--blueberry);
+  border: 3px solid var(--blueberry);
+  font-weight: 200;
+  border-radius: 5px;
+  animation-name: resume;
+  animation-duration: 3s;
+}
+
+#resumeButton:hover {
+  /* color: var(--periwinkle);
+  background-color: var(--blueberry); */
+  background-color: rgba(77, 100, 141, 0.2);
+}
+
+#navbarLogo {
+  animation-name: grow;
+  animation-duration: 3.5s;
+}
+
+#navItem1 {
+  animation-name: slideup;
+  animation-duration: 1.5s;
+}
+
+#navItem2 {
+  animation-name: slideup;
+  animation-duration: 2s;
+}
+
+#navItem3 {
+  animation-name: slideup;
+  animation-duration: 2.5s;
+}
+
+#navItem4 {
+  animation-name: slideup;
+  animation-duration: 3s;
+}
+
+#navItem5 {
+  animation-name: slideup;
+  animation-duration: 3.5s;
+}
+
+.listLabel {
+  color: var(--blueberry);
+  font-weight: bold;
+}
+
+strong {
+  color: var(--blueberry);
+  font-size: 14pt;
+}
+
+.strongAlt {
+  color: var(--midnight-blue);
+  font-size: 14pt;
+}
+
+aside {
+  color: var(--blueberry);
+}
+
+#gridIntro {
+  /* border: 1px solid white; */
+  width: 80%;
+  margin-top: 5em;
+  position: relative;
+  left: 10%;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-template-rows: repeat(10, 3em);
+  column-gap: 4%;
+}
+
+#box1 {
+  color: var(--periwinkle);
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#box2 {
+  place-self: center;
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+  animation-name: name;
+  animation-duration: 3s;
+}
+
+#box3 {
+  grid-column: 1 / 2;
+  grid-row: 5 / 11;
+}
+
+#box4 {
+  place-self: center;
+  grid-column: 2 / 3;
+  grid-row: 1 / 11;
+  animation-name: profile-pic;
+  animation-duration: 3s;
+}
+
+h1 {
+  font-size: 32pt;
+  color: var(--blueberry);
+}
+
+h2 {
+  font-size: 24pt;
+}
+
+h3 {
+  color: var(--blueberry);
+  margin-bottom: 0;
+}
+
+.flexColCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexRowCenter {
+  display: flex;
+  justify-content: center;
+}
+
+li::marker {
+  color: var(--blueberry);
+  font-weight: bold;
+}
+
+#education {
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+#gridProjects {
+  /* border: 1px solid white; */
+  width: 60%;
+  position: relative;
+  left: 20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 35px;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 35px;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.gridProjectsCell {
+  /* border: 1px solid white; */
+  background-color: var(--blueberry);
+  border-radius: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-self: center;
+  height: 20em;
+  transition: all 0.5s ease-in-out;
+}
+
+.gridProjectsCell:hover {
+  transform: scale(1.1);
+}
+
+.projectTitle {
+  /* border: 1px solid white; */
+  color: var(--midnight-blue);
+  margin: 30px;
+  text-align: center;
+  width: 60%;
+  /* padding-bottom: 0; */
+}
+
+.projectDate {
+  /* border: 1px solid white; */
+  font-size: 10pt;
+  font-weight: bold;
+  margin-top: 28px;
+  margin-right: 40px;
+  padding-bottom: 0;
+  text-align: end;
+}
+
+.projectText {
+  /* border: 1px solid white; */
+  width: 70%;
+  margin-top: 0;
+  text-align: center;
+}
+
+.flexProjectLangs {
+  display: flex;
+  justify-content: center;
+}
+
+.projectLangs {
+  /* border: 1px solid white; */
+  color: var(--midnight-blue);
+  font-size: 12pt;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+a[href="https://github.com/RishmalRohinkumar/RGB-Color-Guessing-Game"]
+{
+  color: var(--midnight-blue);
+  text-decoration: none;
+}
+
+a[href="https://github.com/RishmalRohinkumar/RGB-Color-Guessing-Game"]:hover
+{
+  text-decoration: underline;
+}
+
+.experienceContainer {
+  /* border: 1px solid white; */
+  width: 45%;
+  margin-bottom: 3vh;
+}
+
+.experienceContainer > div {
+  display: flex;
+  justify-content: center;
+}
+
+.experienceHeader {
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.link {
+  margin: 20px;
+}
+
+#contact {
+  width: 30%;
+  position: relative;
+  left: 35%;
+  text-align: center;
+  margin-top: 1em;
+}
+
+#contact > p {
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
+
+#footer {
+  padding: 2em;
+  font-size: 10pt;
+}
+
+cite {
+  display: none;
+}
+
+#blueberry {
+  color: var(--blueberry);
+}
+
+/* #navbar {
+  background-color: var(--blueberry);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: ;
+}
+
+main {
+  padding-top: 6em;
+} */
